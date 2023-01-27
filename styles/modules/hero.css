@@ -8,7 +8,7 @@
     .hero {
         grid-gap: 0 2rem;
         grid-template-columns: 1fr 1fr;
-        padding: 6rem 1rem 8rem 1rem;
+        padding: 8rem 1rem 10rem 1rem;
     }
 }
 
@@ -75,13 +75,13 @@
 .hero__avatar {
     margin: 1rem auto;
     display: block;
-    height: 70vmin;
+    height: 60vmin;
     clip-path: circle(47%); 
 }
 
 @media (min-width: 550px) {
     .hero__avatar {
-        height: 35vmin;
+        height: 25vmin;
     }
 }
 
