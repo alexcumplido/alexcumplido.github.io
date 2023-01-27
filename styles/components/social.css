@@ -3,8 +3,17 @@
 }
 
 .social i {
-    padding: 1.25rem;
+    padding: 1.20rem 1rem;
+     background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     transition: all 0.30s ease-in; 
+}
+
+.social i:hover {
+   
      background: linear-gradient(270deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
