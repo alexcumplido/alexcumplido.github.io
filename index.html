@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="Alexandre Cumplido Bou" />
+        <meta name="description" content="Porfolio" />
+        <meta name="keywords" content="HTML5, CSS3, JavaScript, ECMA Script, ES6, Git, GitHub, React" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/alexcumplido/portfolio/6fb9aaebb5c1e4321379f601ca90771d90c1a530/images/favicon.svg">
+        <link href="styles/main.css" rel="stylesheet" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/alexcumplido/portfolio/main/images/website.PNG" />
+        <link href="styles/main.css" rel="stylesheet" />
+        <meta property="og:title" content="Hey! Here's some of my work!">
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/alexcumplido/portfolio/main/images/website.PNG">
+        <meta property="og:url" content="https://raw.githubusercontent.com/alexcumplido/portfolio/main/images/website.PNG">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <title>Hey! I code the web</title>
+    </head>
+    <body>
+        <a id="skip-link" class="skip-link" href="#projects">skip to content</a>
+        <span class="top-arrow">
+            <a href="#" >
+                <img src="./images/up-arrow-svgrepo-com.svg" alt="Menu image">
+           </a>
+        </span>
+        <header class="header container-standard">
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
+            <nav id="main-menu" class="main-nav" aria-label="Main menu">
+                <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                    <span class="sr-only">Close main menu</span>
+                    <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul class="nav__list flex-center">
+                     <li class="nav__item flex-center">
+                        <a 
+                            class="nav__link"
+                            href="#skip-link" 
+                            target="_self">
+                            about   
+                        </a>
+                    </li>
+                    </li class="nav__item">
+                        <a 
+                            class="nav__link"
+                            href="#projects" 
+                            target="_self">
+                            work
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a 
+                            class="nav__link nav__link-cta" 
+                            href="#contact" 
+                            target="_self">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+        </header>
+        <main>
+            <section id="hero" class="hero container-standard">
+                <div id="about" class="hero__profile flex-center">
+                    <p class="hero__intro">
+                        Hi, I'm
+                        <span>Alexandre <span>Cumplido</span></span>  
+                        <span>Frontend developer</span>
+                    </p>
+                    <div class="hero__portrait">
+                        <img class="hero__avatar" src="./images/IMG_1952-modified.png" alt="Profile picture"/>
+                    </div>
+                     <ul class="flex-center social">
+                        <a href="https://github.com/alexcumplido" class="list__item-icon" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                            <span class="sr-only">Github</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alexandrecb/" class="list__item-icon"  target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                    </ul>
+                    </div>
+                <div id="about" class="hero__bio">
+                    <div class="about__buttons">
+                        <p>modify bio length:</p>
+                        <div class="buttons-wrapper">
+                            <span>shorter</span>
+                            <button class="about__button" id="button-short"></button>
+                            <button class="about__button about__button--active" id="button-medium"></button>
+                            <button class="about__button" id="button-long"></button>
+                            <span>longer</span>
+                        </div>
+                    </div>
+                    <div id="bio" class="about__bio">
+                        <p>
+                            Human trying it's best!
+                        </p>
+                    </div>
+                    <div id="bio" class="about__bio about__bio--active">
+                        <p>
+                            Barcelona based developer. Currently working with React.js and TypeScript.
+                        </p> 
+                        <p>
+                            Looking to contribute to a company creating solutions with an impact on customers and solving users' problems.
+                        </p>
+                    </div>
+                    <div id="bio" class="about__bio">
+                        <p> 
+                            Translating business logic into an easy-to-use UI is my passion. Digging into Node.js and Express.js. Also interested in Accessibility. 
+                        </p> 
+                        <p>
+                            Driven by team collaboration, I enjoy participating in Hackathons and tech meetups.
+                        </p>
+                        <p>
+                            When not working or programming, I spent time in nature, reading sci-fi and practicing swimming or yoga.
+                        </p>             
+                    </div>
+                </div>
+            </section>
+            <div class="gradient gradient-inverted"></div>
+            <section class="section flex-center section-projects container-standard">
+                <h2 id="projects" class="section__heading">work</h2>
+                <div class="projects-wrapper container-standard">
+                    <article class="project">
+                        <a 
+                            class="image-wrapper"
+                            href="https://takeme-home.vercel.app/"
+                            target="_blank"
+                            >
+                            <img class="project__image" src="./images/pets.PNG" alt="Screenshot of takemehome project." />
+                        </a> 
+                        <div class="project__content">
+                            <p class="project__descripton"><span class="project__heading">Take Me Home</span> helps people looking to adopt an animal from a shelter.
+                                Built with <span class="project__footer">React.js</span>, <span class="project__footer">TypeScript</span>, and used <span class="project__footer">Vite</span> as an environment builder tool.
+                            </p>
+                        </div>
+                        <div class="project__cta">
+                            <a 
+                                class="cta__link" 
+                                href="https://takeme-home.vercel.app/"
+                                target="_blank"
+                                >
+                                <i class="fa-solid fa-link project__icon"></i>
+                            </a>
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido/takemeHome"
+                                target="_blank"
+                                >
+                                <i class="fa-brands fa-github project__icon"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a 
+                            class="image-wrapper"
+                            href="https://github.com/alexcumplido/yoga-api#yoga-api-%EF%B8%8F"
+                            target="_blank">
+                            <img class="project__image" src="./images/yoga.PNG" alt="Screenshot of the YogaSeries project." />
+                        </a> 
+                        <div class="project__content">
+                            <p class="project__descripton"><span class="project__heading">Yoga API</span> is an API that will serve yoga categories and postures upon HTTP request. Built with <span class="project__footer">Node.js</span> and <span class="project__footer">Express.js</span> and deployed on <span class="project__footer">Render</span>.</p>
+                        </div>
+                        <div class="project__cta">
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido/yoga-api#yoga-api-%EF%B8%8F"
+                                target="_blank"
+                                >
+                                <i class="fa-solid fa-link project__icon"></i>    
+                            </a>
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido/yoga-api#yoga-api-%EF%B8%8F"
+                                target="_blank"
+                                >
+                                <i class="fa-brands fa-github project__icon"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a  
+                            class="image-wrapper"
+                            href="https://alexcumplido.github.io/frontend-projects/"
+                            target="_blank">
+                            <img class="project__image" src="./images/elements.PNG" alt="Screenshot of the Elements." />
+                        </a> 
+                        <div class="project__content">
+
+                            <p class="project__descripton"><span class="project__heading">Elements</span> are interface widgets ready-to-use. Built with vanilla <span class="project__footer">JavaScipt</span>, <span class="project__footer">CSS3</span> and applying <span class="project__footer">accessibilty</span>.
+                            </p>
+                        </div>
+                        <div class="project__cta">
+                            <a 
+                                class="cta__link" 
+                                href="https://alexcumplido.github.io/frontend-projects/"
+                                target="_blank"
+                                >
+                                <i class="fa-solid fa-link project__icon"></i>
+                            </a>
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido/frontend-projects"
+                                target="_blank"
+                                >
+                                <i class="fa-brands fa-github project__icon"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a 
+                            class="image-wrapper"
+                            href="https://yogaseries.vercel.app/"
+                            target="_blank">
+                            <img class="project__image" src="./images/yourYoga.png" alt="Screenshot of the YogaSeries project." />
+                        </a> 
+                        <div class="project__content">
+
+                            <p class="project__descripton"><span class="project__heading">Yoga Series</span> supports yoga practitioners in their postures. Client-side built with <span class="project__footer">Sass</span>, <span class="project__footer">JavaScript</span>, <span class="project__footer">React.js</span>, and used <span class="project__footer">Eslint</span> and <span class="project__footer">Prettier</span>.</p>
+                        </div>
+                        <div class="project__cta">
+                            <a 
+                                class="cta__link" 
+                                href="https://yogaseries.vercel.app/"
+                                target="_blank"
+                                >
+                                <i class="fa-solid fa-link project__icon"></i>    
+                            </a>
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido/yogaSeries"
+                                target="_blank"
+                                >
+                                <i class="fa-brands fa-github project__icon"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a 
+                            class="image-wrapper"
+                            href="https://starwars-swapi.vercel.app/"
+                            target="_blank"
+                            >
+                            <img class="project__image" src="./images/swapi.PNG" alt="Screenshot of Swapi project." />
+                        </a> 
+                        <div class="project__content">
+                            <p class="project__descripton"><span class="project__heading">SWAPI</span> let the user can log in and visualize spaceships, pilots and films from the Star Wars universe. Tech used <span class="project__footer">CSS3, JavaScript, React, Router, AXIOS, Vite</span>.</p> 
+                        </div>
+                        <div class="project__cta">
+                            <a 
+                                class="cta__link" 
+                                href="https://starwars-swapi.vercel.app/"
+                                target="_blank"
+                                >
+                                <i class="fa-solid fa-link project__icon"></i>
+                            </a>
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido/starwars-swapi#swapi---star-wars-api"
+                                target="_blank"
+                                >
+                                <i class="fa-brands fa-github project__icon"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a  
+                            class="image-wrapper"
+                            href="https://github.com/alexcumplido"
+                            target="_blank"
+                            >
+                            <img class="project__image" src="./images/githubProfile.PNG" alt="Screenshot of the Github Profile." />
+                        </a> 
+                        <div class="project__content">
+                            <p class="project__descripton"><span class="project__heading">Looking for more ?</span>. Check my GitHub profile and see what I've been working on.</p>
+                        </div>
+                        <div class="project__cta">
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido"
+                                target="_blank"
+                                >
+                                <i class="fa-solid fa-link project__icon"></i>
+                            </a>
+                            <a 
+                                class="cta__link" 
+                                href="https://github.com/alexcumplido"
+                                target="_blank"
+                                >
+                                <i class="fa-brands fa-github project__icon"></i>
+                            </a>
+                        </div>
+                    </article>                  
+                </div>
+            </section>
+            <div class="gradient"></div>
+            <section id="contact" class="section-form section flex-center container-standard">
+                <h2 class="section__heading container-standard">Let's conect</h2>
+                <p class="section-form__description">I am currently accepting new freelance clients and interesting projects.</p>
+                <p class="section-form__description">
+                    Email me at: <span>alexcubou@gmail.com</span>
+                    <br>
+                    Or send me a quick message here:
+                </p>
+                <form id="my-form" action="https://formspree.io/f/xzbqpgrj" method="POST"  class="form">
+                    <div class="control-wrapper">
+                        <label class="form__label sr-only">First Name</label>
+                        <input class="form__input" type="text" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="control-wrapper">
+                        <label class="form__label sr-only">Last Name</label>
+                        <input class="form__input" type="text" name="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="control-wrapper">
+                        <label class="form__label sr-only">Email</label>
+                        <input class="form__input" type="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="control-wrapper">
+                        <label class="form__label sr-only">Message</label>
+                        <textarea type="text" class="form__input" id="textarea" name="message" placeholder="Write your message here..." rows="4" cols="20" required>
+                        </textarea>
+                    </div>
+                    <button id="my-form-button" class="form__button">Submit</button>
+                    <p class="form-status" id="my-form-status"></p>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="flex-center container-standard"> 
+                <p>2023© Alexandre Cumplido Bou &#128640;</p>
+                 <ul class="flex-center social">
+                        <a href="https://github.com/alexcumplido" class="list__item-icon" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                            <span class="sr-only">Github</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alexandrecb/" class="list__item-icon"  target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                        <a href="https://twitter.com/alexcubou" class="list__item-icon"  target="_blank">
+                            <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                </ul>
+            </section>
+        </footer>    
+        <script src="https://kit.fontawesome.com/e782a67dc5.js" crossorigin="anonymous"></script>
+        <script type="module" src="./scripts/script.js"></script>
+        <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+        <script type="text/javascript" src="./scripts/form.js"></script>
+        <script src="./scripts/formButton.js"></script>
+    </body>
+</html>     

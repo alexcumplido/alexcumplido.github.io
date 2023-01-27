@@ -1,0 +1,14 @@
+@import url("./base/fonts.css");
+@import url("./base/reset.css");
+@import url("./base/root.css");
+@import url("./base/utils.css");
+@import url("./base/animations.css");
+@import url("./modules/header.css");
+@import url("./modules/hero.css");
+@import url("./modules/project.css");
+@import url("./modules/contact.css");
+@import url("./modules/footer.css");
+@import url("./components/skipLink.css");
+@import url("./components/arrow.css");
+@import url("./components/social.css");
+@import url("./components/form.css");

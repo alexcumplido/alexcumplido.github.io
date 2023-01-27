@@ -1,0 +1,10 @@
+.social {
+    display: flex;
+}
+
+.social i {
+    padding: 1.25rem;
+     background: linear-gradient(270deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

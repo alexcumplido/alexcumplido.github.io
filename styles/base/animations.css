@@ -1,0 +1,56 @@
+@keyframes toBottom {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-25%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes toRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%)
+    }
+    50% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes toLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50%)
+    }
+    50% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes toFront {
+  from {
+    opacity: 0%;
+  } 
+  to {
+    opacity: 100%;
+  }
+} 
+
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
