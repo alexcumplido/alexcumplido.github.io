@@ -382,7 +382,6 @@
 
 .project__heading {
   font-weight: var(--fw-extra-bold);
-  text-transform: uppercase;
 }
 
 .project__footer {
