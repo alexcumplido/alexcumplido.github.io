@@ -1,0 +1,17 @@
+{
+  "name": "alexcumplido.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio. Thanks for your time and attention!",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
+}
