@@ -7,6 +7,7 @@
     "dev": "webpack --config webpack.config.dev.js",
     "build": "webpack --mode production --config webpack.config.js",
     "build-watch": "webpack --watch --config webpack.config.dev.js",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
