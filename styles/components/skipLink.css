@@ -1,22 +1,22 @@
 .skip-link {
-    position: absolute;
-    left: -999px;
-    width: 1px;
-    height: 1px;
-    top: auto;
-    text-decoration: none;
-    text-transform: uppercase;
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .skip-link:focus {
-    top: 1rem;
-    left: 1rem;
-    width: initial;
-    height: initial;
-    z-index: 1;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    border-radius: 100vmax;
-    background-color: var(--color-neutral-600);
-    z-index: 2;
+  top: 1rem;
+  left: 1rem;
+  width: initial;
+  height: initial;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 100vmax;
+  background-color: var(--color-neutral-600);
+  z-index: 2;
 }
