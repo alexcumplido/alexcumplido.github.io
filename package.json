@@ -1,5 +1,34 @@
 {
+  "name": "alexcumplido.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio. Thanks for your time and attention!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.config.dev.js",
+    "build": "webpack --mode production --config webpack.config.js",
+    "build-watch": "webpack --watch --config webpack.config.dev.js",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "@babel/core": "^7.21.3",
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "dotenv-webpack": "^8.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "terser-webpack-plugin": "^5.3.7",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
   }
 }

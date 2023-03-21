@@ -1,3 +1,4 @@
+/* Form script */
 var form = document.getElementById("my-form");
 const textarea = document.getElementById("textarea");
 textarea.textContent = "";
@@ -34,3 +35,5 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+

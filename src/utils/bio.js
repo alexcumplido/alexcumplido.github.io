@@ -1,3 +1,4 @@
+/* Bio script */
 const btnBioShort = document.getElementById("button-short");
 const btnBioMedium = document.getElementById("button-medium");
 const btnBioLong = document.getElementById("button-long");
@@ -33,3 +34,4 @@ btnBioLong.addEventListener("click", function (event) {
   event.target.classList.add("about__button--active");
   bios[2].classList.add("about__bio--active");
 });
+
